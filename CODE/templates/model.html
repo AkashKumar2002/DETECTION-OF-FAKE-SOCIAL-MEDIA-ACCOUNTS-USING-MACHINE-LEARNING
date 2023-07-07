@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Fake Account</title>
+  <link rel="icon" href="static/images/1.png" type="image/icon type">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="{{url_for('index')}}">
+            <img src="static/images/1.png" alt="" style="width: 200px;" /><span>
+              
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('about')}}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('view')}}"> View </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('model')}}">Model</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+            <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
+              <a href="{{url_for('prediction')}}">
+                Prediction
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+	<!--about-part start-->
+    <section class="about-part" style="
+    height: 700px;
+">
+        <div class="container">
+            <div class="about-part-details text-center">
+            <h1 class="bolded" style="margin-top: 50px; color:black; background-color:coral;">{{msg}}</h1></div>
+            <div class="about-part-details text-center"> 
+                <h2 style="margin-top: 100px;">Model Training</h2>
+                <div class="col-md-12 col-md-offset-0 text-center">
+                    <div class="display-t">
+    
+                        <!-- <h1 style="
+                        margin-top: 209px;
+                    ">Welcome {{myname}}</h1> -->
+    
+                         <div class="display-tc animate-box" data-animate-effect="fadeIn"> 
+                            <center><h3  style="color:black;bottom: 115px;margin-top: 29px;"></h3></center>
+                              <h3 style="color:black;bottom: 115px;"> Fake Account Detection </h3>
+    
+                            <h3 style="color:black;bottom: 100px;">With the help of Machine Learning</h3>
+                            <p>
+    
+    
+    
+                                <center> <form action="{{url_for('model')}}" method="post">
+                                    <!--								<a href="/upload" class="btn btn-primary btn-lg">Get Started</a>-->
+                                                              <center><select name="algo"style="margin-top : 50px;height: 52.22222px;width: 302.22222px; border-color :color:orange; ">
+                                                                  <option style  = "color:black;" value="0">Choose an Algorithm</option>
+                                                                  <option style  = "color:black;"value="1">Logistic Regression</option>
+                                                                  <option style  = "color:black;"value="2">Random Forest Classifier</option>
+                                                                  <!-- <option style  = "color:black;"value="3">Support Vector classifier</option> -->
+                                                                  <option style  = "color:black;"value="4">Decision Tree Classifier</option>
+                                                              </select></center>
+                                                              <input class="btn btn-outline-primary" type="submit" value="Submit"style="margin-left: 0px;margin-top: 33px;">
+                                                                  </form></center> 
+    <!--								<a href="/upload" class="btn btn-primary btn-lg">Get Started</a>-->
+    <!--								<a href="#" class="btn btn-white btn-outline btn-lg"></a></p>-->
+                        </div>
+                    </div>
+                <div class="about-part-content">
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <!-- <ol class="breadcrumb">
+                              <li><a href="{{url_for('index')}}">home</a><span>//</span></li>
+                              <li><a href="{{url_for('about')}}">about</a></li> -->
+                            </ol><!--/.breadcrumb-->
+                        </div><!--/.container-->
+                    </div><!--/.breadcrumbs-->
+                </div><!--/.about-part-content-->
+            </div><!--/.about-part-details-->	
+        </div><!--/.container-->
+
+    </section><!--/.about-part-->
+    <!--about-part end-->
+
+
+
+
+
+    <!-- footer section -->
+  <section class="container-fluid footer_section" style="margin-top: 4000px;">
+    <p>
+      Copyright &copy; 2022 All Rights Reserved By
+      <a href="https://balaram42.blogspot.com/">Balaram Panigrahy</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
